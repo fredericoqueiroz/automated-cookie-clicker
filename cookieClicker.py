@@ -17,7 +17,7 @@ items = [[driver.find_element_by_id("productName" + str(i)), driver.find_element
 actions = ActionChains(driver)
 actions.click(cookie)
 
-for i in range(50000):
+for i in range(2000):
     actions.perform()
     count = int(cookie_count.text.split(" ")[0])
     for item_name, item_value in items:
